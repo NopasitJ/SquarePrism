@@ -3,9 +3,11 @@
 
 int main()
 {
-    int loop = 9;
+    int loop;
     int i;
     int j;
+    printf("Enter Size : ");
+    scanf_s("%d", &loop);
     for (i = 1; i <= loop; i++)
     {
         for (j = 1; j <= i; j++) {
@@ -28,45 +30,19 @@ int main()
         for (j = 1; j <= i; j++) {
             printf("*");
         }
-        /*for (j = i; j >= 1; j--) {
+        for (j = 0; j <=(loop-i-1)*2+1; j++) {
             printf(" ");
-        }
-        for (j = i; j >= 1; j--) {
-            printf(" ");
-        }
-        for (j = 1; j <= loop - i; j++) {
+        }       
+        for (j = 1; j <=i; j++) {
             printf("*");
-        }*/
+        }
             printf("\n");
         }
 
 
-        /* for(i = 1; i <= loop; i++)
-         {
-             for(j = 1; j <= loop-i; j++ ){
-                 printf(" ");
-             }
-
-             for(j = 1; j <= i; j++){
-                 printf("*");
-             }
-
-             printf("\n");
-         }
-
-         for(i = 1; i <= loop; i++)
-         {
-             for(j = i; j >= 1 ; j-- ){
-                 printf(" ");
-             }
-
-             for(j = 1; j <= loop-i; j++){
-                 printf("*", j);
-             }
-
-             printf("\n");
-
-         }
-        */
+ 
         return 0;
  }
+
+
+
